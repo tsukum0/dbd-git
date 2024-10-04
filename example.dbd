@@ -1,0 +1,16 @@
+$c[Visual Studio Code
+
+Name: "Client"
+Command: "g."
+Description: "This command will be in the github, no nned to creat in dbd"
+
+] 
+
+$c[Variables to easy commands]
+$var[in;$toLowercase[$message[1]]]
+$var[2;$toLowercase[$message[2]]]
+
+$c[Hello command]
+$if[$var[in]==Hello]
+    Hello
+    $endif
