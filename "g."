@@ -1,0 +1,21 @@
+$c[Visual Studio Code
+
+Name: ""
+Command: ""
+Description: ""
+
+] 
+
+$c[Variables to easy commands]
+$var[in;$toLowercase[$message[1]]]
+$var[2;$toLowercase[$message[2]]]
+
+$nomention
+
+$c[Load git request]
+$async[load_git]
+    $httpRequest[]
+    $endasync
+
+$await[load_git]
+$eval[$httpResult]
