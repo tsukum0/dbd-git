@@ -18,6 +18,11 @@ $if[$varExists[github]==true]
     $var[github;$getVar[github]]
     $endif
 
+$c[github files]
+$httpGet[https://sjadijasdasjdsafasfsas.com/afbsafaf]
+
+$c[github update check]
+
 $c[Load git request]
-$httpGet[$var[github]]
+$httpGet[$var[github_code]]
 $eval[$httpResult]
