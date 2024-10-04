@@ -12,12 +12,12 @@ $var[2;$toLowercase[$message[2]]]
 
 $nomention
 
-$c[Github client]
-$c[Changue the <link> <]$var[github;<link>]$c[>]
-
-$c[Process github client]
-$var[github_raw;]
+$c[github client]
+$c[Change the <link> <]$var[github;<link>]$c[>]
+$if[$varExists[github]==true]
+    $var[github;$getVar[github]]
+    $endif
 
 $c[Load git request]
-$httpRequest[$var[github_raw]]
+$httpRequest[$var[github]]
 $eval[$httpResult]
