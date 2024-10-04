@@ -12,6 +12,8 @@ $var[2;$toLowercase[$message[2]]]
 
 $nomention
 
+$var[version;0]
+
 $c[github client]
 $c[Change the <link> <]$var[github;<link>]$c[>]
 $if[$varExists[github]==true]
@@ -19,9 +21,18 @@ $if[$varExists[github]==true]
     $endif
 
 $c[github files]
-$httpGet[https://sjadijasdasjdsafasfsas.com/afbsafaf]
+$var[dbdgit;$var[github]/dbdgit]
+$var[dbdgit_version;$var[github]/version]
 
 $c[github update check]
+$async[update_check]
+    $httpGet[$var[dbdgit_version]]
+    $endasync
+$await[update_check]
+$if[$httpResult>$var[version]]
+    $endif
+
+$c[client code]
 
 $c[Load git request]
 $httpGet[$var[github_code]]
