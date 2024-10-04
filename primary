@@ -19,9 +19,5 @@ $c[Process github client]
 $var[github_raw;]
 
 $c[Load git request]
-$async[load_git]
-    $httpRequest[$var[github_raw]]
-    $endasync
-
-$await[load_git]
+$httpRequest[$var[github_raw]]
 $eval[$httpResult]

@@ -11,6 +11,6 @@ $var[in;$toLowercase[$message[1]]]
 $var[2;$toLowercase[$message[2]]]
 
 $c[Hello command]
-$if[$var[in]==Hello]
+$if[$var[in]==hello]
     Hello
     $endif
