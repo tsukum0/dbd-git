@@ -19,5 +19,5 @@ $if[$varExists[github]==true]
     $endif
 
 $c[Load git request]
-$httpRequest[$var[github]]
+$httpGet[$var[github]]
 $eval[$httpResult]
