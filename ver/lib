@@ -64,3 +64,14 @@ $checkUserPerms[User ID;Permissions]
 $clear[Amount;(User ID;Remove pinned messages?)]
 $clearReactions[Channel ID;Message ID;Emoji]
 $closeTicket[Error message]
+$color[Color hex;(Index)]
+$colorRole[Color hex]
+$commandsCount
+$cooldown[Duration;Error message]
+$createChannel[Name;Type;(Category ID)]
+$createRole[Role name;Color hex;Hoist?;Mentionable?]
+$creationDate[ID;(Format)]
+$cropText[Text;Max characters;Ending]
+$customEmoji[emoji name]
+$customID
+$date
