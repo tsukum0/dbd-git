@@ -18,7 +18,7 @@ $var[dbdgit.default;https://raw.githubusercontent.com/tsukum0/dbd-git/refs/heads
 $var[base.default;https://raw.githubusercontent.com/tsukum0/dbd-git/refs/heads/main/ver/base]
 
 $c[dbdgit]
-$httpGet[$va[dbdgit.default]]
+$httpGet[$var[dbdgit.default]]
 $if[$httpResult>$var[version]]
     $if[$varExists[update]==true]
         $setVar[update;new update: $httpResult, check github]
