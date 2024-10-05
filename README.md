@@ -1,1 +1,1 @@
-This is a experimental project
+**this project aims in a experimental functional that was ocassionaly planed to work on github, expands the way to test codes and approval codes snippets**
