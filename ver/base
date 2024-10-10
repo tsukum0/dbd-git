@@ -14,5 +14,6 @@ $nomention
 
 $c[install]
 $if[$var[in]==install]
-    $sendMessage[pong! $pingms]
+    $if[]
     $endif
+$endif
