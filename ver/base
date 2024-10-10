@@ -12,7 +12,7 @@ $var[2;$toLowercase[$message[2]]]
 
 $nomention
 
-$c[ping]
-$if[$var[in]==ping]
+$c[install]
+$if[$var[in]==install]
     $sendMessage[pong! $pingms]
     $endif
