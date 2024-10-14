@@ -12,8 +12,7 @@ $var[2;$toLowercase[$message[2]]]
 
 $nomention
 
-$c[install]
-$if[$var[in]==install]
-    $if[]
-    $endif
+$c[dbdgit]
+$if[$var[in]==dbdgit]
+<@$authorID> | yes
 $endif
