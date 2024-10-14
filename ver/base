@@ -16,3 +16,8 @@ $c[dbdgit]
 $if[$var[in]==dbdgit]
 <@$authorID> | yes
 $endif
+
+$c[ping]
+$if[$var[in]==ping]
+$pingms
+$endif
