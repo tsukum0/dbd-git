@@ -13,7 +13,7 @@ $var[2;$toLowercase[$message[2]]]
 $nomention
 
 $c[configuration]
-$var[version;0]
+$var[version;2]
 $var[dbdgit.default;https://raw.githubusercontent.com/tsukum0/dbd-git/refs/heads/main/ver/version]
 $var[base.default;https://raw.githubusercontent.com/tsukum0/dbd-git/refs/heads/main/ver/base]
 
