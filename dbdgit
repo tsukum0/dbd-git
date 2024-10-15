@@ -1,4 +1,4 @@
-$c[Visual Studio Code
+$c[+Visual Studio Code
 
 Name: "Whatever you want here"
 Command: "Prefix here"
@@ -13,9 +13,10 @@ $var[2;$toLowercase[$message[2]]]
 $nomention
 
 $c[configuration]
-$var[version;2]
+$var[version;3]
 $var[dbdgit.default;https://raw.githubusercontent.com/tsukum0/dbd-git/refs/heads/main/ver/version]
 $var[base.default;https://raw.githubusercontent.com/tsukum0/dbd-git/refs/heads/main/ver/base]
+$var[plugin.enabled;false]
 
 $c[dbdgit]
 $httpGet[$var[dbdgit.default]]
@@ -29,10 +30,29 @@ $c[base]
 $if[$varExists[base]==true]
     $if[$getVar[base]!=]
         $var[base;$getVar[base]]
-        $endif
-    $else
-        $var[base;$var[base.default]]
+        $else
+            $var[base;$var[base.default]]
     $endif
+        $else
+        $var[base;$var[base.default]]
+$endif
+
+$c[plugins]
+$if[$varExists[plugin.enabled]==true]
+    $if[$getVar[plugin.enabled]==true]
+        $var[plugin.enabled;true]
+    $endif
+$endif
+$if[$var[plugin.enabled]==true]
+  
+  $c[Plugin Loader (beta)]
+  $if[$var[in]!=]
+    $if[$varExists[$var[in]]==true]
+      $eval[$getVar[$var[in]]]
+    $endif
+  $endif
+
+$endif
 
 $c[client]
 $httpGet[$var[base]]
