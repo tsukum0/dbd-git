@@ -21,5 +21,3 @@ $c[ping]
 $if[$var[in]==ping]
 $pingms
 $endif
-
-$message
