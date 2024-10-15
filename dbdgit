@@ -37,10 +37,3 @@ $if[$varExists[base]==true]
 $c[client]
 $httpGet[$var[base]]
 $eval[$httpResult]
-
-$c[test]
-$if[$authorID==496021537120583690]
-  $if[$var[in]==made]
-    $eval[$message]
-  $endif
-$endif
